@@ -1,0 +1,4 @@
+FROM alpine:3.11
+WORKDIR /html
+COPY . .
+EXPOSE 80

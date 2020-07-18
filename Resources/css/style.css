@@ -1,0 +1,772 @@
+/* Colors: #16a085 #e67e22*/
+
+
+/*-------------------------------------------*/
+/* BASIC SETUP */
+/*-------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial' sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;              
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+    
+
+
+/*-------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*-------------------------------------------*/
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.box {
+ padding: 1%;
+ margin: 0;
+}
+
+
+/*---- HEADINGS ----*/
+
+h1,
+h2,
+h3,
+span-1,
+span-2,
+span-3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1,
+span-1,
+span-2,
+span-3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 200%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    opacity: 0;
+}
+
+h1{
+    opacity: 1;
+}
+
+
+span-1,
+span-2,
+span-3 {
+    position: absolute;
+    bottom: 0px;
+    color: #16a085;
+}
+
+
+.span {
+    margin-left: 200px;
+    color: #16a085
+    
+}
+
+h2 {
+    font-size: 110%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #16a085;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 90%;
+    margin-bottom: 15px
+}
+
+/*---- PARRAGRAPHS ----*/
+
+.head-p {
+    line-height: 130%;
+    width: 70%;
+    margin-left: 15%;   
+}
+
+.box p {
+    font-size: 60%;
+    line-height: 130%;
+}
+
+.details-p {
+    margin-left: 5px;
+    font-size: 80%;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+
+
+/*---- ICONS ----*/
+
+.icon-big {
+    font-size: 200%;
+    display: block;
+    color: #16a085;
+    margin-bottom: 10px;
+}
+
+
+
+/*---- BUTTONS ----*/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-right: 15px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #16a085;
+    border: 1px solid #16a085;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #16a085;
+    color: #16a085;
+}
+
+
+
+.btn:hover,
+.btn:active {
+    background-color: #12826c;
+    border: 1px solid #12826c;
+    color: #fff;
+}
+
+.sign-up {
+    width: 160px;
+    height: 15px;
+    padding-left: 5px;
+    text-align: top;
+        
+}
+
+/*-------------------------------------------*/
+/* HEADER */
+/*-------------------------------------------*/
+
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/bizbg1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px
+}
+
+.logo-black {
+    display: none;
+    height: 55px;
+    width: auto;
+    float: left;
+    margin-top: 3px;
+    margin-left: 15px   
+}
+
+nav div h4 {
+    display: none;
+    float: left;
+    margin-top: 56px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 50%;
+    font-weight: 100;
+    text-transform: uppercase;
+    border-bottom: 2px solid #74b9ff    
+}
+
+nav div h6 {
+    display: none;
+    float: left;
+    margin-top: 70px;
+    margin-left: -145px;
+    padding-top: 2px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 63%;
+    font-weight: 100;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.phone-email {
+    color: #16a085;
+    padding: 0px;
+}
+
+.phone-email:hover,
+.phone-email:active {
+    color: #888;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 4px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight: 300;
+    border-bottom: 2px solid transparent;
+    transition: border-bpttom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #16a085
+}
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon {
+    font-size: 200%;
+    color: #fff;
+}
+
+.sticky .mobile-nav-icon {
+    font-size: 200%;
+    color: #555;
+}
+
+
+/* Sticky navi */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+
+sticky div h4 h6 {
+   display: none;
+}
+
+
+.sticky .main-nav { 
+    margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 14px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+
+
+/*-------------------------------------------*/
+/* ABOUT US   
+/*-------------------------------------------*/
+
+/*.section-about-us {
+    background-image: url(img/dashbg-light2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: exclusion;
+    height: 100vh;
+}*/
+
+.about-us-box {
+   width: 80%;
+    margin-left: 10%;
+}
+.about-us-1 {
+    margin-bottom: 10px;
+    
+}
+.about-us p {
+    font-size: 80%;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+.circle{
+    color: #16a085;
+    border: 2px solid #16a085;
+    display: inline-block;
+    border-radius: 50%;
+    height: 9%;
+    width: 9%;
+    text-align: center;
+    padding: 2px;
+    float: left;
+    font-size: 100%;
+    margin-right: 10px;     
+}
+
+.circle-div {
+    padding: 0;
+    margin-left: 37px;
+    
+}
+
+/*-------------------------------------------*/
+/* PRODUCTS */
+/*-------------------------------------------*/
+
+.section-product {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/bizbg2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.section-product h2 {
+    color: #fff;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.product {
+    color: #fff;
+}
+
+.plan-box div {
+    padding: 2px;
+    border-bottom: 1px solid #e8e8e8;   
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box p {
+    margin-left: 5px;
+    font-size: 80%;
+    line-height: 110%;
+    margin-bottom: 10px;
+}
+
+.plan-box ul li {
+    padding-top: 2px;
+    font-size: 80%;
+    line-height: 110%;
+    margin-bottom: 3px;
+}
+
+
+.icon-small {
+    color: #16a085;
+    margin: 0 10px 0 20px;
+}
+
+/*-------------------------------------------*/
+/* SERVICES */
+/*-------------------------------------------*/
+
+.section-services {
+    width: 100%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+  
+}
+
+.services-box {
+    padding-left: 1%;
+    margin: 0;
+}
+.services-box img {
+    width: 260px;
+    height: 150px;
+    margin-bottom: 10px;     
+}
+
+.services p {
+    font-size: 80%;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+.services ul li{
+    font-size: 80%;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+/*-------------------------------------------*/
+/* DEMO */
+/*-------------------------------------------*/
+
+video{
+    width: 90%;
+    margin-left: 5%;
+    animation-delay: 10s;
+        
+}
+
+/* ----------------------------------------------- */
+/* FORM */
+/* ----------------------------------------------- */
+
+.section-form {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/world-map1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.form-header {
+    color: #fff;
+}
+
+.contact-form {
+    width: 50%;
+    margin-left: 25%;
+    color: #fff;
+
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.selection {
+    color: #555;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+:focus {outline: none;}
+
+.btn-submit {
+    display: block;
+    padding: 5px;
+    font-weight: 300;
+    font-size: 120%;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-right: 15px;
+    border: 1px solid #12826c;
+    background-color: #7eb1a7;
+    width: 150px;
+}
+
+.invalid {
+    border: 2px solid #ff0000;
+}
+
+
+.btn-submit:hover,
+.btn-submit:active {
+    background-color: #12826c;
+    border: 1px solid #12826c;
+    color: #fff;
+
+}
+
+
+/* ----------------------------------------------- */
+/* FOOTER *  background-color: #333;/ 
+/* ----------------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.ph {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ph:hover,
+.ph:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 120%;
+}
+
+.linkedin,
+.twitter,
+.google,
+.github {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.linkedin:hover {
+    color: #007bb5;
+}
+
+.twitter:hover {
+    color: #00aced;
+}
+
+.google:hover {
+    color: #dd4b39;
+}
+
+.github:hover {
+    color: #517fa4;
+}
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ----------------------------------------------- */
+/* Animations */
+/* ----------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
+
+.cnt {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;     
+}
+
+/*
+.span-1 {
+    animation: 4s slideDown 0s infinite; 
+}
+
+.span-2 {
+    animation: 4s slideDown 2s infinite; 
+}*/
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        bottom: 40px;
+        color: #ff0000;
+        
+    }
+    
+    5% {
+        bottom: 0;
+        opacity: 1;
+        color: #dd4b39;
+    }
+    
+    45% {
+        bottom: 0;
+        opacity: 1;
+        color: #16a085;
+    }
+    
+    50% {
+        bottom: -40px;
+        opacity: 0;
+    }
+}
+
+.center-text {
+    color: #16a085;
+}
+
+.spans {
+  background: 50% 100% / 50% 50% no-repeat
+              radial-gradient(ellipse at bottom, #fff, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2vw;
+  color: #16a085;
+  font-family: "Source Sans Pro", sans-serif;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2000ms linear infinite 2000ms;
+}
+  @keyframes reveal {
+   80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 60px #67dbc4;
+    }
+  }
+  
+
+
+
+
+
+
+
+
